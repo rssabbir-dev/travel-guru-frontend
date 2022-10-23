@@ -11,7 +11,7 @@ import Registration from '../components/pages/Registration';
 import Main from '../layout/Main';
 import PrivateRoute from './PrivateRoute';
 
-export const siteURL = 'http://localhost:5000';
+export const siteURL = 'https://travel-guru-backend-three.vercel.app';
 export const router = createBrowserRouter([
 	{
 		path: '/',
