@@ -14,7 +14,7 @@ const Header = () => {
 			});
 	};
 	return (
-		<div className='navbar bg-base-100'>
+		<div className='navbar'>
 			<div className='navbar-start'>
 				<div className='dropdown'>
 					<label tabIndex={0} className='btn btn-ghost lg:hidden'>
@@ -59,7 +59,7 @@ const Header = () => {
 				</Link>
 			</div>
 			<div className='navbar-center hidden lg:flex'>
-				<div className='form-control'>
+				<div className='form-control mr-4'>
 					<input
 						type='text'
 						placeholder='Search'
@@ -98,6 +98,11 @@ const Header = () => {
 						tabIndex={0}
 						className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
 					>
+						<li>
+							<span className='justify-between'>
+								{user?.displayName}
+							</span>
+						</li>
 						<li>
 							<Link to='profile' className='justify-between'>
 								Profile
